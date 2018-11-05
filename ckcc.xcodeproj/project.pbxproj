@@ -13,7 +13,9 @@
 		A2054446219058430057A42E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2054444219058430057A42E /* LaunchScreen.storyboard */; };
 		A205444E21905A8B0057A42E /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A205444D21905A8B0057A42E /* EventTableViewCell.xib */; };
 		A205445221905C980057A42E /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A205445121905C980057A42E /* EventTableViewCell.swift */; };
-		A2D1E2A521905F2300627B60 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D1E2A421905F2300627B60 /* EventsViewController.swift */; };
+		A245E9DB219071F600513234 /* NewEventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A245E9DA219071F600513234 /* NewEventTableViewController.swift */; };
+		A245E9DD2190768E00513234 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A245E9DC2190768E00513234 /* ApiResponse.swift */; };
+		A2D1E2A521905F2300627B60 /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D1E2A421905F2300627B60 /* EventsTableViewController.swift */; };
 		A2D1E2A72190636900627B60 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D1E2A62190636900627B60 /* Event.swift */; };
 		D6573135D49191A11CFCCF43 /* Pods_ckcc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D5A2D7E62EA0C774ABDAF2 /* Pods_ckcc.framework */; };
 /* End PBXBuildFile section */
@@ -29,7 +31,9 @@
 		A2054447219058430057A42E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A205444D21905A8B0057A42E /* EventTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
 		A205445121905C980057A42E /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
-		A2D1E2A421905F2300627B60 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		A245E9DA219071F600513234 /* NewEventTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEventTableViewController.swift; sourceTree = "<group>"; };
+		A245E9DC2190768E00513234 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
+		A2D1E2A421905F2300627B60 /* EventsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
 		A2D1E2A62190636900627B60 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		A9D5A2D7E62EA0C774ABDAF2 /* Pods_ckcc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ckcc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -91,8 +95,10 @@
 				A2054447219058430057A42E /* Info.plist */,
 				A205444D21905A8B0057A42E /* EventTableViewCell.xib */,
 				A205445121905C980057A42E /* EventTableViewCell.swift */,
-				A2D1E2A421905F2300627B60 /* EventsViewController.swift */,
+				A2D1E2A421905F2300627B60 /* EventsTableViewController.swift */,
 				A2D1E2A62190636900627B60 /* Event.swift */,
+				A245E9DA219071F600513234 /* NewEventTableViewController.swift */,
+				A245E9DC2190768E00513234 /* ApiResponse.swift */,
 			);
 			path = ckcc;
 			sourceTree = "<group>";
@@ -211,10 +217,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A245E9DB219071F600513234 /* NewEventTableViewController.swift in Sources */,
 				A2D1E2A72190636900627B60 /* Event.swift in Sources */,
 				A205445221905C980057A42E /* EventTableViewCell.swift in Sources */,
+				A245E9DD2190768E00513234 /* ApiResponse.swift in Sources */,
 				A205443C219058430057A42E /* AppDelegate.swift in Sources */,
-				A2D1E2A521905F2300627B60 /* EventsViewController.swift in Sources */,
+				A2D1E2A521905F2300627B60 /* EventsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

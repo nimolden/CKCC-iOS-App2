@@ -7,4 +7,8 @@ target 'ckcc' do
 
   # Pods for ckcc
   pod 'SDWebImage', '~> 4.0'
+  pod 'Firebase/Core'
+  pod 'Firebase/Firestore'
+  pod 'Firebase/Storage'
+  
 end

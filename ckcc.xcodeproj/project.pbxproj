@@ -15,6 +15,7 @@
 		A205445221905C980057A42E /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A205445121905C980057A42E /* EventTableViewCell.swift */; };
 		A245E9DB219071F600513234 /* NewEventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A245E9DA219071F600513234 /* NewEventTableViewController.swift */; };
 		A245E9DD2190768E00513234 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A245E9DC2190768E00513234 /* ApiResponse.swift */; };
+		A29602C221931384009410C6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A29602C121931384009410C6 /* GoogleService-Info.plist */; };
 		A2D1E2A521905F2300627B60 /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D1E2A421905F2300627B60 /* EventsTableViewController.swift */; };
 		A2D1E2A72190636900627B60 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D1E2A62190636900627B60 /* Event.swift */; };
 		D6573135D49191A11CFCCF43 /* Pods_ckcc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D5A2D7E62EA0C774ABDAF2 /* Pods_ckcc.framework */; };
@@ -33,6 +34,7 @@
 		A205445121905C980057A42E /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 		A245E9DA219071F600513234 /* NewEventTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEventTableViewController.swift; sourceTree = "<group>"; };
 		A245E9DC2190768E00513234 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
+		A29602C121931384009410C6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A2D1E2A421905F2300627B60 /* EventsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
 		A2D1E2A62190636900627B60 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		A9D5A2D7E62EA0C774ABDAF2 /* Pods_ckcc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ckcc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +90,7 @@
 		A205443A219058430057A42E /* ckcc */ = {
 			isa = PBXGroup;
 			children = (
+				A29602C121931384009410C6 /* GoogleService-Info.plist */,
 				A205443B219058430057A42E /* AppDelegate.swift */,
 				A205443F219058430057A42E /* Main.storyboard */,
 				A2054442219058430057A42E /* Assets.xcassets */,
@@ -166,6 +169,7 @@
 			files = (
 				A205444E21905A8B0057A42E /* EventTableViewCell.xib in Resources */,
 				A2054446219058430057A42E /* LaunchScreen.storyboard in Resources */,
+				A29602C221931384009410C6 /* GoogleService-Info.plist in Resources */,
 				A2054443219058430057A42E /* Assets.xcassets in Resources */,
 				A2054441219058430057A42E /* Main.storyboard in Resources */,
 			);
@@ -181,11 +185,31 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ckcc/Pods-ckcc-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

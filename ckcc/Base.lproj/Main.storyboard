@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -124,6 +125,25 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="200" id="qJ2-oe-Fga">
+                                        <rect key="frame" x="0.0" y="160" width="375" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qJ2-oe-Fga" id="4Cr-8J-ar6">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="kVI-gX-M1s">
+                                                    <rect key="frame" x="16" y="11" width="343" height="178"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="kVI-gX-M1s" secondAttribute="trailing" id="0F4-TO-Nbn"/>
+                                                <constraint firstItem="kVI-gX-M1s" firstAttribute="top" secondItem="4Cr-8J-ar6" secondAttribute="topMargin" id="KMo-7z-Eh3"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="kVI-gX-M1s" secondAttribute="bottom" id="nHW-Gq-iTu"/>
+                                                <constraint firstItem="kVI-gX-M1s" firstAttribute="leading" secondItem="4Cr-8J-ar6" secondAttribute="leadingMargin" id="v4B-cn-iRC"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -141,6 +161,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="dateTextField" destination="QUM-He-6F4" id="9s5-9C-nyQ"/>
+                        <outlet property="eventImageView" destination="kVI-gX-M1s" id="YWb-hf-iQc"/>
                         <outlet property="locationTextField" destination="Pfk-65-Fam" id="Hqh-Au-AaD"/>
                         <outlet property="titleTextField" destination="RH1-ht-zGt" id="AQl-Ix-eVS"/>
                     </connections>
@@ -170,6 +191,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="tZQ-SS-J2E">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <connections>
                             <action selector="onRefreshControllPulled:" destination="Bx3-nu-Lcd" eventType="valueChanged" id="Usp-HC-jBG"/>
@@ -236,4 +258,7 @@
             <point key="canvasLocation" x="-15" y="-471"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="default" width="177" height="71"/>
+    </resources>
 </document>

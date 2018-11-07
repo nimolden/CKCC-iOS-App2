@@ -8,6 +8,8 @@
 
 import UIKit
 import SDWebImage
+import Firebase
+import FirebaseStorage
 
 class EventsTableViewController: UITableViewController {
 
@@ -24,13 +26,16 @@ class EventsTableViewController: UITableViewController {
         refreshControl?.beginRefreshing()
         let point = CGPoint(x: 0, y: -refreshControl!.frame.size.height)
         tableView.setContentOffset(point, animated: true)
-        loadDataFromServer()
+        //loadDataFromServer()
+        //loadDataFromFirestore()
+        loadImageFromStorage()
     }
     
     // MARK: - IBActions
     
     @IBAction func onRefreshControllPulled(_ sender: Any) {
-        loadDataFromServer()
+        // loadDataFromServer()
+        // loadDataFromFirestore()
     }
     
     
@@ -67,4 +72,51 @@ class EventsTableViewController: UITableViewController {
         task.resume()
     }
     
+    private func loadDataFromFirestore(){
+        print("loadDataFromFirestore")
+        let db = Firestore.firestore()
+        db.collection("events").getDocuments { (querySnapshot, error) in
+            if error == nil {
+                print("Load data success. Count: ", querySnapshot!.count)
+                for document in querySnapshot!.documents {
+                    let title = document.data()["title"] as! String
+                    print("Title: ", title)
+                }
+            } else {
+                print("Load data error: ", error!.localizedDescription)
+            }
+        }
+    }
+    
+    private func loadImageFromStorage(){
+        print("loadImageFromStorage")
+        let storage = Storage.storage()
+        let imageRef = storage.reference(withPath: "ict.png")
+        imageRef.getData(maxSize: 1024000) { (data, error) in
+            print("Load data completed")
+            if error == nil {
+                let image = UIImage(data: data!)
+                print("Image: ", image)
+            } else {
+                print ("Error: ", error!.localizedDescription)
+            }
+        }
+    }
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

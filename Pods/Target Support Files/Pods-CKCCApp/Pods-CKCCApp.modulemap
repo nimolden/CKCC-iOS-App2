@@ -1,0 +1,6 @@
+framework module Pods_CKCCApp {
+  umbrella header "Pods-CKCCApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

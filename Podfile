@@ -10,5 +10,7 @@ target 'CKCCApp' do
   pod 'Firebase/Firestore'
   pod 'Firebase/Storage'
   pod 'SDWebImage', '~> 4.0'
+  pod 'FBSDKLoginKit'
+  pod 'Firebase/Auth'
 
 end

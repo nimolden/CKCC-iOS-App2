@@ -72,7 +72,7 @@ class NewEventTableViewController: UITableViewController, UINavigationController
                         let okAction = UIAlertAction(title: "OK", style: .default, handler: { (action) in
                             self.navigationController?.popViewController(animated: true)
                         })
-                        self.showAlertMessage(title: "Success", message: "Add event success.", withOkAction: okAction)
+                        Utility.showAlertMessage(title: "Success", message: "Add event success.", withOkAction: okAction, inViewController: self)
                     }
                 })
             })
@@ -104,10 +104,10 @@ class NewEventTableViewController: UITableViewController, UINavigationController
             DispatchQueue.main.async {
                 if apiResponse.code == 0 {
                     // Insert success
-                    self.showAlertMessage(title: "Success", message: "Add event success.")
+                    Utility.showAlertMessage(title: "Success", message: "Add event success.", inViewController: self)
                 } else {
                     // Insert fail
-                    self.showAlertMessage(title: "Error", message: "Add event fail.")
+                    Utility.showAlertMessage(title: "Error", message: "Add event fail.", inViewController: self)
                 }
             }
         }
@@ -130,21 +130,11 @@ class NewEventTableViewController: UITableViewController, UINavigationController
         ref.addDocument(data: newEvent) { (error) in
             print("Add completed. ", ref.collectionID)
         }
-        
     }
     
-    private func showAlertMessage(title: String, message: String){
-        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-        alertController.addAction(okAction)
-        present(alertController, animated: true, completion: nil)
-    }
     
-    private func showAlertMessage(title: String, message: String, withOkAction okAction: UIAlertAction){
-        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        alertController.addAction(okAction)
-        present(alertController, animated: true, completion: nil)
-    }
+    
+    
     
 }
 

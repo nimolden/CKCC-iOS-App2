@@ -21,6 +21,9 @@
 		A20C9D6721999829000F8DBC /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20C9D6221999829000F8DBC /* EventTableViewCell.swift */; };
 		A20C9D6821999829000F8DBC /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20C9D6321999829000F8DBC /* EventsTableViewController.swift */; };
 		A20C9D6A2199A928000F8DBC /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20C9D692199A928000F8DBC /* EventDetailViewController.swift */; };
+		A2F1A8E921A2D550006F208F /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F1A8E821A2D550006F208F /* ProfileTableViewController.swift */; };
+		A2FB10F2219C511800D4E0D8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FB10F1219C511800D4E0D8 /* LoginViewController.swift */; };
+		A2FB10F4219C542B00D4E0D8 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FB10F3219C542B00D4E0D8 /* Utility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +44,9 @@
 		A20C9D6221999829000F8DBC /* EventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 		A20C9D6321999829000F8DBC /* EventsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
 		A20C9D692199A928000F8DBC /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
+		A2F1A8E821A2D550006F208F /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		A2FB10F1219C511800D4E0D8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A2FB10F3219C542B00D4E0D8 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		EDE9FBDC2D5C4990E3886926 /* Pods_CKCCApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CKCCApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -99,6 +105,9 @@
 				A20C9D6221999829000F8DBC /* EventTableViewCell.swift */,
 				A20C9D6021999829000F8DBC /* NewEventTableViewController.swift */,
 				A20C9D692199A928000F8DBC /* EventDetailViewController.swift */,
+				A2FB10F1219C511800D4E0D8 /* LoginViewController.swift */,
+				A2FB10F3219C542B00D4E0D8 /* Utility.swift */,
+				A2F1A8E821A2D550006F208F /* ProfileTableViewController.swift */,
 			);
 			path = CKCCApp;
 			sourceTree = "<group>";
@@ -209,7 +218,10 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CKCCApp/Pods-CKCCApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
@@ -224,7 +236,10 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
@@ -249,6 +264,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2FB10F4219C542B00D4E0D8 /* Utility.swift in Sources */,
+				A2FB10F2219C511800D4E0D8 /* LoginViewController.swift in Sources */,
 				A20C9D6721999829000F8DBC /* EventTableViewCell.swift in Sources */,
 				A20C9D6821999829000F8DBC /* EventsTableViewController.swift in Sources */,
 				A20C9D6421999829000F8DBC /* ApiResponse.swift in Sources */,
@@ -256,6 +273,7 @@
 				A20C9D4C219993C0000F8DBC /* ViewController.swift in Sources */,
 				A20C9D4A219993C0000F8DBC /* AppDelegate.swift in Sources */,
 				A20C9D6A2199A928000F8DBC /* EventDetailViewController.swift in Sources */,
+				A2F1A8E921A2D550006F208F /* ProfileTableViewController.swift in Sources */,
 				A20C9D6621999829000F8DBC /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

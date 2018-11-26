@@ -12,5 +12,6 @@ target 'CKCCApp' do
   pod 'SDWebImage', '~> 4.0'
   pod 'FBSDKLoginKit'
   pod 'Firebase/Auth'
+  pod 'GoogleMaps'
 
 end

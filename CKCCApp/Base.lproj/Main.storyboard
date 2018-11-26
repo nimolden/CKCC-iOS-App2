@@ -11,6 +11,37 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Contact-->
+        <scene sceneID="Kdj-bo-hRe">
+            <objects>
+                <viewController id="wCY-No-LFD" customClass="ContactViewController" customModule="CKCCApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wMz-UY-H4U">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PuO-tj-P5N" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Zuh-nH-XsY" firstAttribute="trailing" secondItem="PuO-tj-P5N" secondAttribute="trailing" id="OJe-Re-lsn"/>
+                            <constraint firstItem="PuO-tj-P5N" firstAttribute="top" secondItem="Zuh-nH-XsY" secondAttribute="top" id="Q0a-KK-Gly"/>
+                            <constraint firstItem="Zuh-nH-XsY" firstAttribute="bottom" secondItem="PuO-tj-P5N" secondAttribute="bottom" id="SyF-wP-Gvo"/>
+                            <constraint firstItem="PuO-tj-P5N" firstAttribute="leading" secondItem="Zuh-nH-XsY" secondAttribute="leading" id="YQ6-91-xDA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Zuh-nH-XsY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Contact" id="jZ7-45-fyS"/>
+                    <connections>
+                        <outlet property="mapView" destination="PuO-tj-P5N" id="X0K-xg-J3V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sQR-C5-hvD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1538" y="118"/>
+        </scene>
         <!--home-->
         <scene sceneID="pAi-nE-9e0">
             <objects>
@@ -26,6 +57,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l2k-g4-P29" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-785" y="161"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="gOZ-ui-clC">
+            <objects>
+                <viewController id="gkC-1N-sCb" customClass="MapViewController" customModule="CKCCApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dmp-rj-Znf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Mi0-4E-gAr"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7cb-gT-k3O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1009" y="924"/>
         </scene>
         <!--New Event-->
         <scene sceneID="Cz6-ma-y4g">
@@ -327,6 +373,7 @@
                         <segue destination="Pcl-Y8-5ST" kind="relationship" relationship="viewControllers" id="Mcw-ck-vJ3"/>
                         <segue destination="Naq-HP-W8E" kind="relationship" relationship="viewControllers" id="UgA-t4-1c3"/>
                         <segue destination="RDE-tX-Sdk" kind="relationship" relationship="viewControllers" id="1Qf-VI-BGz"/>
+                        <segue destination="wCY-No-LFD" kind="relationship" relationship="viewControllers" id="R0v-nj-xuH"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pxp-6G-J8o" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -350,7 +397,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0jl-rh-MPK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-15" y="-471"/>
+            <point key="canvasLocation" x="-174" y="-747"/>
         </scene>
         <!--Profile-->
         <scene sceneID="KEh-Z7-zp2">

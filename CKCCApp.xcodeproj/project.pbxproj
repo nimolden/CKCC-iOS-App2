@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		9FE51640DB843C21BB9CC971 /* Pods_CKCCApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDE9FBDC2D5C4990E3886926 /* Pods_CKCCApp.framework */; };
 		A205374721AC0FA700432030 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A205374621AC0FA700432030 /* ContactViewController.swift */; };
-		A205374921AC103A00432030 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A205374821AC103A00432030 /* MapViewController.swift */; };
 		A20C9D4A219993C0000F8DBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20C9D49219993C0000F8DBC /* AppDelegate.swift */; };
 		A20C9D4C219993C0000F8DBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20C9D4B219993C0000F8DBC /* ViewController.swift */; };
 		A20C9D4F219993C0000F8DBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A20C9D4D219993C0000F8DBC /* Main.storyboard */; };
@@ -23,6 +22,8 @@
 		A20C9D6721999829000F8DBC /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20C9D6221999829000F8DBC /* EventTableViewCell.swift */; };
 		A20C9D6821999829000F8DBC /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20C9D6321999829000F8DBC /* EventsTableViewController.swift */; };
 		A20C9D6A2199A928000F8DBC /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20C9D692199A928000F8DBC /* EventDetailViewController.swift */; };
+		A24AC5FD21AEAE440011DB2F /* CoordinatePickupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24AC5FC21AEAE440011DB2F /* CoordinatePickupViewController.swift */; };
+		A24AC5FF21AEB5440011DB2F /* ChroyChangvaToRupp.gpx in Resources */ = {isa = PBXBuildFile; fileRef = A24AC5FE21AEB5440011DB2F /* ChroyChangvaToRupp.gpx */; };
 		A2F1A8E921A2D550006F208F /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F1A8E821A2D550006F208F /* ProfileTableViewController.swift */; };
 		A2FB10F2219C511800D4E0D8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FB10F1219C511800D4E0D8 /* LoginViewController.swift */; };
 		A2FB10F4219C542B00D4E0D8 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FB10F3219C542B00D4E0D8 /* Utility.swift */; };
@@ -32,7 +33,6 @@
 		319A69BF85CB85AB0EA5FA58 /* Pods-CKCCApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CKCCApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CKCCApp/Pods-CKCCApp.debug.xcconfig"; sourceTree = "<group>"; };
 		9261395F2D03643B469C3B5B /* Pods-CKCCApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CKCCApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CKCCApp/Pods-CKCCApp.release.xcconfig"; sourceTree = "<group>"; };
 		A205374621AC0FA700432030 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
-		A205374821AC103A00432030 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A20C9D46219993C0000F8DBC /* CKCCApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CKCCApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A20C9D49219993C0000F8DBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A20C9D4B219993C0000F8DBC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +48,8 @@
 		A20C9D6221999829000F8DBC /* EventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 		A20C9D6321999829000F8DBC /* EventsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
 		A20C9D692199A928000F8DBC /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
+		A24AC5FC21AEAE440011DB2F /* CoordinatePickupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatePickupViewController.swift; sourceTree = "<group>"; };
+		A24AC5FE21AEB5440011DB2F /* ChroyChangvaToRupp.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = ChroyChangvaToRupp.gpx; path = "../../../../../Data/Teaching/CKCC/iOS App Dev/Res/ChroyChangvaToRupp.gpx"; sourceTree = "<group>"; };
 		A2F1A8E821A2D550006F208F /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 		A2FB10F1219C511800D4E0D8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A2FB10F3219C542B00D4E0D8 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
@@ -113,7 +115,8 @@
 				A2FB10F3219C542B00D4E0D8 /* Utility.swift */,
 				A2F1A8E821A2D550006F208F /* ProfileTableViewController.swift */,
 				A205374621AC0FA700432030 /* ContactViewController.swift */,
-				A205374821AC103A00432030 /* MapViewController.swift */,
+				A24AC5FC21AEAE440011DB2F /* CoordinatePickupViewController.swift */,
+				A24AC5FE21AEB5440011DB2F /* ChroyChangvaToRupp.gpx */,
 			);
 			path = CKCCApp;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			files = (
 				A20C9D5E2199981B000F8DBC /* EventTableViewCell.xib in Resources */,
 				A20C9D54219993C0000F8DBC /* LaunchScreen.storyboard in Resources */,
+				A24AC5FF21AEB5440011DB2F /* ChroyChangvaToRupp.gpx in Resources */,
 				A20C9D5C2199943C000F8DBC /* GoogleService-Info.plist in Resources */,
 				A20C9D51219993C0000F8DBC /* Assets.xcassets in Resources */,
 				A20C9D4F219993C0000F8DBC /* Main.storyboard in Resources */,
@@ -295,12 +299,12 @@
 				A20C9D6821999829000F8DBC /* EventsTableViewController.swift in Sources */,
 				A20C9D6421999829000F8DBC /* ApiResponse.swift in Sources */,
 				A205374721AC0FA700432030 /* ContactViewController.swift in Sources */,
-				A205374921AC103A00432030 /* MapViewController.swift in Sources */,
 				A20C9D6521999829000F8DBC /* NewEventTableViewController.swift in Sources */,
 				A20C9D4C219993C0000F8DBC /* ViewController.swift in Sources */,
 				A20C9D4A219993C0000F8DBC /* AppDelegate.swift in Sources */,
 				A20C9D6A2199A928000F8DBC /* EventDetailViewController.swift in Sources */,
 				A2F1A8E921A2D550006F208F /* ProfileTableViewController.swift in Sources */,
+				A24AC5FD21AEAE440011DB2F /* CoordinatePickupViewController.swift in Sources */,
 				A20C9D6621999829000F8DBC /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

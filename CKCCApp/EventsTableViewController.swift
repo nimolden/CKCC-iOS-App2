@@ -33,9 +33,11 @@ class EventsTableViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destinationVc = segue.destination as! EventDetailViewController
-        let event = events[selectedIndex]
-        destinationVc.event = event
+        if segue.identifier == "segue_event_detail" {
+            let destinationVc = segue.destination as! EventDetailViewController
+            let event = events[selectedIndex]
+            destinationVc.event = event
+        }
     }
     
     // MARK: - IBActions

@@ -18,6 +18,7 @@ class NewEventTableViewController: UITableViewController, UINavigationController
     @IBOutlet weak var eventImageView: UIImageView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
+    @IBOutlet weak var coordinateTextField: UITextField!
     @IBOutlet weak var saveButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -78,6 +79,12 @@ class NewEventTableViewController: UITableViewController, UINavigationController
             })
         }
         
+    }
+    
+    @IBAction func onUserDidPickOnMap(sender: UIStoryboardSegue) {
+        let coordinatePickupVc = sender.source as! CoordinatePickupViewController
+        let selectedCoordinate = coordinatePickupVc.selectedCoordinate!
+        coordinateTextField.text = "\(selectedCoordinate.latitude), \(selectedCoordinate.longitude)"
     }
     
     private func showLoading(state: Bool){

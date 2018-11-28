@@ -171,8 +171,46 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="50" id="wmG-ng-1bb">
+                                        <rect key="frame" x="0.0" y="160" width="375" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wmG-ng-1bb" id="Rz1-Tj-M4J">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coordinate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17F-k6-ccR">
+                                                    <rect key="frame" x="16" y="14.5" width="85" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9c-cF-qA5">
+                                                    <rect key="frame" x="271" y="10" width="84" height="30"/>
+                                                    <state key="normal" title="Pick on Map"/>
+                                                    <connections>
+                                                        <segue destination="LTW-Sw-zYT" kind="show" id="fI5-5R-lwR"/>
+                                                    </connections>
+                                                </button>
+                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gMf-8R-tNG">
+                                                    <rect key="frame" x="109" y="10" width="154" height="30"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="gMf-8R-tNG" firstAttribute="centerY" secondItem="Rz1-Tj-M4J" secondAttribute="centerY" id="4Mj-A2-X5H"/>
+                                                <constraint firstItem="c9c-cF-qA5" firstAttribute="leading" secondItem="gMf-8R-tNG" secondAttribute="trailing" constant="8" symbolic="YES" id="Sf7-IY-w5W"/>
+                                                <constraint firstItem="17F-k6-ccR" firstAttribute="leading" secondItem="Rz1-Tj-M4J" secondAttribute="leadingMargin" id="fma-kj-AB2"/>
+                                                <constraint firstItem="c9c-cF-qA5" firstAttribute="centerY" secondItem="Rz1-Tj-M4J" secondAttribute="centerY" id="iJU-Dn-xta"/>
+                                                <constraint firstItem="17F-k6-ccR" firstAttribute="centerY" secondItem="Rz1-Tj-M4J" secondAttribute="centerY" id="jyg-sL-2Of"/>
+                                                <constraint firstItem="gMf-8R-tNG" firstAttribute="leading" secondItem="17F-k6-ccR" secondAttribute="trailing" constant="8" symbolic="YES" id="rcH-Db-wO1"/>
+                                                <constraint firstAttribute="trailing" secondItem="c9c-cF-qA5" secondAttribute="trailing" constant="20" symbolic="YES" id="zQa-vr-Sut"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="200" id="xYx-3v-Yqd">
-                                        <rect key="frame" x="0.0" y="160" width="375" height="200"/>
+                                        <rect key="frame" x="0.0" y="210" width="375" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xYx-3v-Yqd" id="z8h-g2-8XU">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
@@ -191,7 +229,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="50" id="INP-fO-FCV">
-                                        <rect key="frame" x="0.0" y="360" width="375" height="50"/>
+                                        <rect key="frame" x="0.0" y="410" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="INP-fO-FCV" id="HoB-aW-fhj">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
@@ -228,6 +266,7 @@
                     <navigationItem key="navigationItem" title="Add Event" id="CZR-0u-n90"/>
                     <connections>
                         <outlet property="activityIndicator" destination="u0t-pj-6bm" id="cXW-Fz-PLY"/>
+                        <outlet property="coordinateTextField" destination="gMf-8R-tNG" id="OmW-cx-5jT"/>
                         <outlet property="dateTextField" destination="jme-EA-W4y" id="iUX-yb-oI1"/>
                         <outlet property="eventImageView" destination="h7P-Hi-aUZ" id="kw9-GF-tj8"/>
                         <outlet property="locationTextField" destination="zUm-1y-12k" id="efD-yZ-DrB"/>
@@ -238,6 +277,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z6S-gB-MIC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1676" y="-1129.385307346327"/>
+        </scene>
+        <!--Choose Location-->
+        <scene sceneID="dff-Rc-6Q8">
+            <objects>
+                <viewController title="Choose Location" id="LTW-Sw-zYT" customClass="CoordinatePickupViewController" customModule="CKCCApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RWB-F0-Te0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cot-OB-X7Q" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8QK-0l-Zz8" firstAttribute="bottom" secondItem="Cot-OB-X7Q" secondAttribute="bottom" id="hB0-Nx-l5T"/>
+                            <constraint firstItem="8QK-0l-Zz8" firstAttribute="trailing" secondItem="Cot-OB-X7Q" secondAttribute="trailing" id="n2z-P0-oq0"/>
+                            <constraint firstItem="Cot-OB-X7Q" firstAttribute="top" secondItem="8QK-0l-Zz8" secondAttribute="top" id="ohY-kA-ci4"/>
+                            <constraint firstItem="Cot-OB-X7Q" firstAttribute="leading" secondItem="8QK-0l-Zz8" secondAttribute="leading" id="qC9-om-GcN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8QK-0l-Zz8"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="Cot-OB-X7Q" id="nEF-Ax-r1x"/>
+                        <segue destination="DXe-7h-ac8" kind="unwind" identifier="unwind_segue_map" unwindAction="onUserDidPickOnMapWithSender:" id="ENq-1z-G28"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JIG-a1-JBi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="DXe-7h-ac8" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2634" y="-1129"/>
         </scene>
         <!--Event Detail-->
         <scene sceneID="O0j-ee-nyO">
@@ -305,7 +376,7 @@
                     <navigationItem key="navigationItem" title="Events" id="rAh-RR-EiA">
                         <barButtonItem key="rightBarButtonItem" title="Add" id="Cu0-EP-p6H">
                             <connections>
-                                <segue destination="FhI-jY-OfL" kind="show" id="qqZ-TM-3gC">
+                                <segue destination="FhI-jY-OfL" kind="show" identifier="segue_new_event" id="qqZ-TM-3gC">
                                     <nil key="action"/>
                                 </segue>
                             </connections>
